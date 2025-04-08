@@ -162,6 +162,11 @@ header{
         }
     }
 }
+.Shipping-info{
+    font-weight: 500;
+    padding-bottom: 5px;
+    color: #121111;
+}
 .shipping-container{
     grid-row: 2/3;
     padding-top: 6vh;
@@ -252,11 +257,92 @@ footer{
 
 /* Escritorio pequeño / tablet */
 @media only screen and (min-width: 768px) {
-
+        .cart-img-container{
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        .cart-info-container{        
+            padding: 5px 5px 0 5px;
+            height: 13vh;
+            display: grid;
+            grid-column: 2/3;
+            grid-template-columns: 1;
+            grid-template-rows: 2fr 1fr;
+        }
+        .cart-names{
+        }
+        h3{
+            font-size: 1.5rem;
+        }
+        .cart-info{
+            font-size: 1.1rem;
+        }
+        .cart-price{
+            font-size: 1.2rem;
+        }
+        .menu1-container{
+            display: flex;
+            .menu1-icon{
+                width: 26vw;
+                height: 5.7vh;
+                padding-top: 1vh;
+                position: relative;
+            }
+            .menu1{
+                width: 5vw;
+                position: absolute;
+                right: 5px;
+            }
+        }
+        .amount-container{
+            width: 26vw;
+            padding-left: 5px;
+            height: auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1;
+            align-items: center;
+            gap: 4px;
+            .less-amount{
+                padding: 4px;
+                width: 7vw;
+                height: 4vh;
+            }
+            .number-amount{
+                font-size: 1.4rem;
+            }
+            .more-amount{
+                padding: 3.1px;
+                width: 7vw;
+                height: 4vh;
+                border-radius: 100%;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+.shipping-card{
+    width: 8vw;
+}
+.shipping-dropdown{
+    position: relative;
+    right: 0;
+    width: 5vw;
 }
 
 
 
 @media only screen and (min-width: 1023px){
-    
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1;
+    }
+    .cart-container{
+        columns: 1/2;
+    }
+    .shipping-container{
+        columns: 2/3;
+    }
 }
